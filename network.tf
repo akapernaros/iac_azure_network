@@ -66,14 +66,6 @@ resource "azurerm_subnet_network_security_group_association" "snet3_nsg_link" {
   network_security_group_id = azurerm_network_security_group.security_group.id
 }
 
-resource "azurerm_public_ip" "ngw" {
-  allocation_method = "Static"
-  location = var.region_name
-  name = local.pip-name
-  resource_group_name = azurerm_resource_group.resourcegroup.name
-  sku ="Standard"
-}
-
 resource "azurerm_public_ip_prefix" "ngw" {
   name                = local.nat-name-pre
   location            = var.region_name
