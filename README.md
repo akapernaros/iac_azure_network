@@ -15,5 +15,10 @@ Assignments 54, 55 of cxp.
 *   [Terraform Commands (CLI)](
     https://www.terraform.io/docs)/commands/index.html)
     
-*   [Terraform: Azure Service Management Provider](
+*   [Terraform: Azure Resource Manager Provider](
+    https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+    
+*   [~~Terraform: Azure Service Management Provider~~ (deprecated)](
     https://www.terraform.io/docs/providers/azure/index.html)
+
+    
