@@ -13,7 +13,7 @@ Assignments 54, 55 of cxp.
 ## See also
 
 *   [Terraform Commands (CLI)](
-    https://www.terraform.io/docs)/commands/index.html)
+    https://www.terraform.io/docs/commands/index.html)
     
 *   [Terraform: Azure Resource Manager Provider](
     https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
