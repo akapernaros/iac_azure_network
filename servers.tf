@@ -1,4 +1,4 @@
-resource "azurerm_public_ip" "ngw" {
+resource "azurerm_public_ip" "bast" {
   allocation_method = "Static"
   location = var.region_name
   name = local.pip-name
