@@ -16,4 +16,6 @@ locals {
   nat-name-pre = "nat-${var.region_name}-${var.project_name}-publicipprefix"
   pip-name = "pip-${var.region_name}-${var.project_name}"
   bast-name = "bast-${var.region_name}-${var.project_name}"
+
+  dns-zone-name = "${var.project_name}.azure.msgoat.eu"
 }
