@@ -10,6 +10,8 @@ Assignments 54, 55 of cxp.
     terraform output
 
 
+[Test link (http)](http://www.kobayashi-maru.azure.msgoat.eu)
+
 ## See also
 
 *   [Terraform Commands (CLI)](
