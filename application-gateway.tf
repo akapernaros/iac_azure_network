@@ -67,3 +67,14 @@ resource "azurerm_public_ip" "agw" {
   allocation_method = "Static"
   sku = "Standard"
 }
+
+# https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/dns_a_record
+resource azurerm_dns_a_record agw {
+  name = "www"
+  resource_group_name = azurerm_resource_group.resourcegroup.name
+
+  zone_name = azurerm_dns_zone.dnsz.name
+  ttl = 300
+
+  target_resource_id = azurerm_public_ip.agw.id
+}
