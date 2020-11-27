@@ -7,5 +7,5 @@ variable "region_name" {
 variable "project_name" {
   type = string
   description = "Context of the stack"
-  default = "kobayashi-maru-tj"
+  default = "kobayashi-maru"
 }
