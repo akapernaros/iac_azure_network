@@ -1,4 +1,4 @@
-resource "azurerm_public_ip" "ngw" {
+resource "azurerm_public_ip" "bast" {
   allocation_method = "Static"
   location = var.region_name
   name = local.pip-name
@@ -13,6 +13,6 @@ resource "azurerm_bastion_host" "bastion" {
   ip_configuration {
     name = "configuration"
     subnet_id = azurerm_subnet.bastion.id
-    public_ip_address_id = azurerm_public_ip.ngw.id
+    public_ip_address_id = azurerm_public_ip.bast.id
   }
 }

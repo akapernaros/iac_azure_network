@@ -16,4 +16,11 @@ locals {
   nat-name-pre = "nat-${var.region_name}-${var.project_name}-publicipprefix"
   pip-name = "pip-${var.region_name}-${var.project_name}"
   bast-name = "bast-${var.region_name}-${var.project_name}"
+
+  dns-zone-name = "${var.project_name}.azure.msgoat.eu"
+  vmss-web-name = "vmss-${var.region_name}-${var.project_name}-web"
+  nic-web-name = "nic-${var.region_name}-${var.project_name}-web"
+  ipc-web-name = "ipc-${var.region_name}-${var.project_name}-web"
+  agw-name = "agw-${var.region_name}-${var.project_name}"
+  pip-agw-name = "pip-${var.region_name}-${var.project_name}-agw"
 }
